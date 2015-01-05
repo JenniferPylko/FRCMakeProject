@@ -19,7 +19,6 @@ all: $(OBJECTS)
 clean:
 	@for dir in src; do find $$dir -name \*.o -exec $(RMCOMMAND) {} \; ; done
 	$(RMCOMMAND) bin/*
-	rm -rf doxygen
 	
 deploy:
 	ssh lvuser$(AT)$(DEPLOYTARGET) "rm /home/lvuser/FRCUserProgram || true"
