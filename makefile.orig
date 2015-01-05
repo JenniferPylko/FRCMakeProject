@@ -1,7 +1,7 @@
 AT = @
-INCDIR = -I/home/benjamin/wpilib/cpp/current/include
+INCDIR = -I~/wpilib/cpp/current/include
 CPPFLAGS += -g -Wall -W $(INCDIR) -std=c++11 -fPIC
-LFLAGS = -L/home/benjamin/wpilib/cpp/current/lib -lwpi
+LFLAGS = -L~/wpilib/cpp/current/lib -lwpi
 CXX = arm-frc-linux-gnueabi-g++
 TEAM = TEAMNO
 RMCOMMAND = rm -f
@@ -19,7 +19,6 @@ all: $(OBJECTS)
 clean:
 	@for dir in src; do find $$dir -name \*.o -exec $(RMCOMMAND) {} \; ; done
 	$(RMCOMMAND) bin/*
-	rm -rf doxygen
 	
 deploy:
 	ssh lvuser$(AT)$(DEPLOYTARGET) "rm /home/lvuser/FRCUserProgram || true"
