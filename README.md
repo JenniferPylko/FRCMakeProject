@@ -3,7 +3,7 @@ FRCMakeProject
 
 Contains a makefile for building/deploying 2015 FRC projects, a src/ folder with a default Robot.cpp, and a setup script
 
-For initial setup, run setup.sh (this only works on Ubuntu)
+For initial setup follow all the instructions on http://wpilib.screenstepslive.com/s/4485/m/13810/l/145002-installing-eclipse-c-java (yes, even install Eclipse and the plugins), then run setup.sh
 
 To build the project, just type `make`
 
