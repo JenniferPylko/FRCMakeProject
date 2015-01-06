@@ -15,7 +15,7 @@
 
 AT = @
 INCDIR = -I$(HOME)/wpilib/cpp/current/include
-CPPFLAGS += -g -Wall -W $(INCDIR) -std=c++11 -fPIC
+CPPFLAGS += -g -Wall -W $(INCDIR) -std=c++14 -fPIC
 LFLAGS = -L$(HOME)/wpilib/cpp/current/lib -lwpi
 CXX = arm-frc-linux-gnueabi-g++
 TEAM = TEAMNO
